@@ -1,1 +1,1 @@
-# szkchm-kurs-terraform
+# [Kurs Terraform](https://portal.szkolachmury.pl/products/terraform-praktyczny-kurs-iac)
