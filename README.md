@@ -22,6 +22,8 @@ terraform state show
 terraform state list
 terraform rm
 terraform state import
+
+terraform init -upgrade
 ```
 
 ```
