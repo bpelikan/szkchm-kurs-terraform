@@ -1,0 +1,1 @@
+# szkchm-kurs-terraform
