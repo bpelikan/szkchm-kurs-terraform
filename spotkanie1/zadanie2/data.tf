@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "main_rg" {
-  name = var.main-rg-name
+  name = var.main_rg_name
 }
 
 data "azurerm_client_config" "current" {
