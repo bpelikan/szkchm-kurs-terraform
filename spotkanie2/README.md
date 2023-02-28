@@ -15,3 +15,7 @@ export TF_VAR_subnet_name='subnet02var'
 echo $TF_VAR_subnet_name
 unset TF_VAR_subnet_name
 ```
+
+## [Zadanie 2.2](./zadanie2)
+
+1. Wykorzystanie środowiska z Key Vaultem ze [spotkania 1](../spotkanie1/zadanie2/)
