@@ -1,3 +1,13 @@
+locals {
+  passwords = {
+    secret1 = "secretvalue123"
+    secret2 = "secretvalue321"
+    keyvault-secret-01 = "terraform-is-cool-1"
+    keyvault_secret_02 = "terraform-is-cool_2"
+  }
+}
+
+
 resource "azurerm_key_vault" "kv_bp_dev_01" {
   name                        = var.key_vault_name
   location                    = data.azurerm_resource_group.main_rg.location

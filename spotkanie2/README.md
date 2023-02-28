@@ -9,13 +9,19 @@ Wykorzystanie zmiennych
 3. Utworzenie pliku `network.tf` z zasobami vnet+subnet (`azurerm_virtual_network`, `azurerm_subnet`)
 4. Utworzenie pliku z wartościami zmiennych `terraform.tfvars`
 5. Przetestowanie działania przekazywania wartości zmiennych za pomocą zmiennych środowiskowych
+    ```bash
+    export TF_VAR_subnet_name='subnet02var'
+    echo $TF_VAR_subnet_name
+    unset TF_VAR_subnet_name
+    ```
 
-```bash
-export TF_VAR_subnet_name='subnet02var'
-echo $TF_VAR_subnet_name
-unset TF_VAR_subnet_name
-```
+- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network
+- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/subnet
+- https://developer.hashicorp.com/terraform/language/values/variables
+- https://developer.hashicorp.com/terraform/language/values/variables#variable-definition-precedence
+
 
 ## [Zadanie 2.2](./zadanie2)
 
 1. Wykorzystanie środowiska z Key Vaultem ze [spotkania 1](../spotkanie1/zadanie2/)
+2. Utworzenie zmiennej lokalnej typu `map(string)` w `kv.tf`
