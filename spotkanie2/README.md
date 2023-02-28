@@ -24,4 +24,9 @@ Wykorzystanie zmiennych
 ## [Zadanie 2.2](./zadanie2)
 
 1. Wykorzystanie środowiska z Key Vaultem ze [spotkania 1](../spotkanie1/zadanie2/)
-2. Utworzenie zmiennej lokalnej typu `map(string)` w `kv.tf`
+2. Utworzenie zmiennej lokalnej `passwords` typu `map(string)` w `variables.tf`
+3. Wykorzystanie pętli `for_each` do utworzenia secretów `azurerm_key_vault_secret` na podstawie wartości zmiennej `passwords`
+
+
+- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret
+- https://developer.hashicorp.com/terraform/language/meta-arguments/for_each

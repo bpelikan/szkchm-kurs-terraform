@@ -1,5 +1,13 @@
 # [Kurs Terraform](https://portal.szkolachmury.pl/products/terraform-praktyczny-kurs-iac)
 
+* [Spotkanie 1](./spotkanie1/)
+   * Konfiguracja providerów
+   * Importowanie obiektów 
+   * Key Vault
+* [Spotkanie 2](./spotkanie2/)
+   * Zmienne
+   * Pętla `for_each`
+   * VNET + subnet
 
 ```bash
 terraform init
