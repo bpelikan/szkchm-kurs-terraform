@@ -18,6 +18,8 @@
 3. Wykorzystanie pętli `count` do utworzenia sekretów `azurerm_key_vault_secret` na podstawie wartości zmiennej `passwords`
 4. Weryfikacja zachowania po dodaniu nowego sekretu
 
+* [azurerm_key_vault_secret](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret)
+* [The count Meta-Argument](https://developer.hashicorp.com/terraform/language/meta-arguments/count)
 
 ## [Zadanie 3.2](./zadanie2)
 
@@ -27,4 +29,8 @@
     ```bash
     terraform import azurerm_storage_account.storage_account_01 /subscriptions/e0a3aa17-0bd9-4dc5-803d-6ea393ade30a/resourceGroups/chm-student22/providers/Microsoft.Storage/storageAccounts/tfimportdemobp0204
     ```
+4. Weryfikacja pliku stanu
+5. Weryfikacja planu po wykonaniu `terraform plan`
    
+* [azurerm_storage_account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account)
+* [Command: import](https://developer.hashicorp.com/terraform/cli/commands/import)
