@@ -1,6 +1,7 @@
 locals {
-  vnet_name_s22 = "${var.vnet_name}-s22"
-  subnet_name_s22 = "${var.vnet_name}-${var.subnet_name}-s22"
+  prefix          = "s22"
+  vnet_name_s22   = "${var.vnet_name}-${local.prefix}"
+  subnet_name_s22 = "${var.vnet_name}-${var.subnet_name}-${local.prefix}"
 }
 
 
