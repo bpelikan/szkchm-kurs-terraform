@@ -22,3 +22,4 @@
 ## [Zadanie 3.2](./zadanie2)
 
 1. Utworznie `Storage Account` w portalu Azure
+2. Utworzenie reprezentacji zasobu `Storage Account` w pliku `sa.tf`
