@@ -29,6 +29,16 @@ Wykorzystanie zmiennych
 
 1. Wykorzystanie środowiska z Key Vaultem ze [spotkania 1](../spotkanie1/zadanie2/)
 2. Utworzenie zmiennej lokalnej `passwords` typu `map(string)` w `variables.tf`
+    ```tf
+    locals {
+        passwords = {
+            secret1            = "secretvalue123"
+            secret2            = "secretvalue321"
+            keyvault-secret-01 = "terraform-is-cool-1"
+            keyvault-secret-02 = "terraform-is-cool-2"
+        }
+    }
+    ```
 3. Wykorzystanie pętli `for_each` do utworzenia secretów `azurerm_key_vault_secret` na podstawie wartości zmiennej `passwords`
 
 

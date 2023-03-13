@@ -1,7 +1,9 @@
 locals {
   passwords = [
     "secretvalue123",
-    "secretvalue321"
+    "secretvalue123-a",
+    "secretvalue321",
+    "secretvalue321-b"
   ]
 }
 
