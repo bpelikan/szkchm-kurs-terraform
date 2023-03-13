@@ -23,3 +23,8 @@
 
 1. Utworznie `Storage Account` w portalu Azure
 2. Utworzenie reprezentacji zasobu `Storage Account` w pliku `sa.tf`
+3. Zaimportowanie zasobu za pomocą komendy `terraform import`
+    ```bash
+    terraform import azurerm_storage_account.storage_account_01 /subscriptions/e0a3aa17-0bd9-4dc5-803d-6ea393ade30a/resourceGroups/chm-student22/providers/Microsoft.Storage/storageAccounts/tfimportdemobp0204
+    ```
+   
