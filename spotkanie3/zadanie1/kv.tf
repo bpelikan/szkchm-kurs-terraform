@@ -25,9 +25,9 @@ resource "azurerm_key_vault" "kv_bp_dev_01" {
 
 
 resource "azurerm_key_vault_secret" "keyvault_secret" {
-  for_each = local.passwords
+  count = length(local.passwords)
 
-  name         = each.key
-  value        = each.value
+  name         = "secret-${count.index}"
+  value        = local.passwords[count.index]
   key_vault_id = azurerm_key_vault.kv_bp_dev_01.id
 }
