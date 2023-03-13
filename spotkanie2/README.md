@@ -8,7 +8,11 @@ Wykorzystanie zmiennych
 2. Utworzenie pliku z definicjami zmiennych `variables.tf` + zmienne lokalne
 3. Utworzenie pliku `network.tf` z zasobami vnet+subnet (`azurerm_virtual_network`, `azurerm_subnet`)
 4. Utworzenie pliku z wartościami zmiennych `terraform.tfvars`
-5. Przetestowanie działania przekazywania wartości zmiennych za pomocą zmiennych środowiskowych
+5. Przekazanie wartości zmiennej w poleceniu
+    ```bash
+    terraform plan -var subnet_name="subnet01-cmdvar"
+    ```
+6. Przetestowanie działania przekazywania wartości zmiennych za pomocą zmiennych środowiskowych
     ```bash
     export TF_VAR_subnet_name='subnet02var'
     echo $TF_VAR_subnet_name
@@ -25,6 +29,16 @@ Wykorzystanie zmiennych
 
 1. Wykorzystanie środowiska z Key Vaultem ze [spotkania 1](../spotkanie1/zadanie2/)
 2. Utworzenie zmiennej lokalnej `passwords` typu `map(string)` w `variables.tf`
+    ```tf
+    locals {
+        passwords = {
+            secret1            = "secretvalue123"
+            secret2            = "secretvalue321"
+            keyvault-secret-01 = "terraform-is-cool-1"
+            keyvault-secret-02 = "terraform-is-cool-2"
+        }
+    }
+    ```
 3. Wykorzystanie pętli `for_each` do utworzenia secretów `azurerm_key_vault_secret` na podstawie wartości zmiennej `passwords`
 
 

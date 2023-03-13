@@ -1,7 +1,7 @@
 locals {
   passwords = {
-    secret1 = "secretvalue123"
-    secret2 = "secretvalue321"
+    secret1            = "secretvalue123"
+    secret2            = "secretvalue321"
     keyvault-secret-01 = "terraform-is-cool-1"
     keyvault-secret-02 = "terraform-is-cool-2"
   }

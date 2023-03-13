@@ -2,12 +2,19 @@
 
 * [Spotkanie 1](./spotkanie1/)
    * Konfiguracja providerów
-   * Importowanie obiektów 
    * Key Vault
 * [Spotkanie 2](./spotkanie2/)
    * Zmienne
    * Pętla `for_each`
    * VNET + subnet
+* [Spotkanie 3](./spotkanie3/)
+   * Pętla `count`
+   * Importowanie zasobów do pliku stanu
+
+
+
+---
+
 
 ```bash
 terraform init
