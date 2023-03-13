@@ -3,7 +3,6 @@
 
 ## [Zadanie 3.1](./zadanie1)
 
-
 1. Wykorzystanie środowiska z Key Vaultem ze [spotkania 1](../spotkanie1/zadanie2/)
 2. Utworzenie zmiennej lokalnej `passwords` typu `list(string)` w `variables.tf`
     ```tf
@@ -18,3 +17,8 @@
     ```
 3. Wykorzystanie pętli `count` do utworzenia sekretów `azurerm_key_vault_secret` na podstawie wartości zmiennej `passwords`
 4. Weryfikacja zachowania po dodaniu nowego sekretu
+
+
+## [Zadanie 3.2](./zadanie2)
+
+1. Utworznie `Storage Account` w portalu Azure
