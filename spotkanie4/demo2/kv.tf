@@ -9,17 +9,13 @@ resource "azurerm_key_vault" "kv_01" {
 
   sku_name = "standard"
 
-  access_policy {
-    tenant_id = data.azurerm_client_config.current.tenant_id
-    object_id = data.azurerm_client_config.current.object_id
-
-    key_permissions = [
-      "Get", "List"
-    ]
-
-    secret_permissions = [
-      "Get", "List", "Delete", "Purge", "Set"
-    ]
+  dynamic "access_policy" {
+    for_each = local.vault_access_policy
+    content {
+      tenant_id          = data.azurerm_client_config.current.tenant_id
+      object_id          = access_policy.value.object_id
+      secret_permissions = access_policy.value.secret_permissions
+    }
   }
 }
 
@@ -29,5 +25,5 @@ resource "azurerm_key_vault_secret" "keyvault_secret" {
 
   name         = each.key
   value        = each.value
-  key_vault_id = azurerm_key_vault.kv_bp_dev_01.id
+  key_vault_id = azurerm_key_vault.kv_01.id
 }
