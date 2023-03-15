@@ -17,10 +17,6 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostic_setting_kv_01" {
     for_each = data.azurerm_monitor_diagnostic_categories.azurerm_monitor_diagnostic_setting_key_vault.log_category_types
     content {
       category = enabled_log.value
-
-      # retention_policy {
-      #   enabled = false
-      # }
     }
   }
 
@@ -29,28 +25,8 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostic_setting_kv_01" {
     content {
       category = metric.value
       enabled  = true
-
-      # retention_policy {
-      #   enabled = false
-      # }
     }
   }
-
-  # enabled_log {
-  #   category = "AuditEvent"
-
-  #   retention_policy {
-  #     enabled = false
-  #   }
-  # }
-
-  # metric {
-  #   category = "AllMetrics"
-
-  #   retention_policy {
-  #     enabled = false
-  #   }
-  # }
 }
 
 
@@ -58,17 +34,3 @@ data "azurerm_monitor_diagnostic_categories" "azurerm_monitor_diagnostic_setting
   #ID Serwisu dla którego chcemy sprawdzić metryki i logi, które możemy logować
   resource_id = azurerm_key_vault.kv_01.id
 }
-
-
-# output "log_category_types" {
-#   value = data.azurerm_monitor_diagnostic_categories.azurerm_monitor_diagnostic_setting_key_vault.log_category_types
-# }
-# output "log_category_groups" {
-#   value = data.azurerm_monitor_diagnostic_categories.azurerm_monitor_diagnostic_setting_key_vault.log_category_groups
-# }
-# output "logs" {
-#   value = data.azurerm_monitor_diagnostic_categories.azurerm_monitor_diagnostic_setting_key_vault.logs
-# }
-# output "metrics" {
-#   value = data.azurerm_monitor_diagnostic_categories.azurerm_monitor_diagnostic_setting_key_vault.metrics
-# }
