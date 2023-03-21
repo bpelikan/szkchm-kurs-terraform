@@ -36,7 +36,6 @@ resource "azurerm_linux_virtual_machine" "jumphost-vm" {
     azurerm_network_interface.jumphost-nic.id,
   ]
 
-
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
