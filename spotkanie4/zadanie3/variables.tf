@@ -19,7 +19,20 @@ locals {
   app_vnet_subnet01_name          = "${local.app_vnet_name}-sub01"
   app_vnet_subnet01_address_space = ["10.2.0.0/21"]
 
-
+  hub_fw_rules = {
+    HTTP = {
+      protocols             = ["TCP"]
+      source_addresses      = ["*"]
+      destination_addresses = ["*"]
+      destination_ports     = ["80"]
+    },
+    HTTPS = {
+      protocols             = ["TCP"]
+      source_addresses      = ["*"]
+      destination_addresses = ["*"]
+      destination_ports     = ["443"]
+    }
+  }
 
 
 }

@@ -27,3 +27,8 @@
 
 ## [Zadanie 4.3](./zadanie3)
 
+* Publiczny adres IP dla Azure Firewall
+* Publiczny adres IP dla Azure Firewall Management
+* Azure Firewall Policy z sku Basic
+* Azure Firewall Policy Rule Collection Group
+* Azure Firewall z sku Basic
