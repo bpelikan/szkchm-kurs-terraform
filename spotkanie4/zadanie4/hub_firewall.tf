@@ -19,7 +19,7 @@ resource "azurerm_firewall_policy" "hub_fw" {
   name                = "${local.hub_prefix}-fw-policy"
   location            = data.azurerm_resource_group.main_rg.location
   resource_group_name = data.azurerm_resource_group.main_rg.name
-  sku            = "Basic"
+  sku                 = "Basic"
 }
 
 resource "azurerm_firewall_policy_rule_collection_group" "hub_fw_rcg" {

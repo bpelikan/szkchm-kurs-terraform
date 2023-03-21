@@ -36,3 +36,6 @@
 
 ## [Zadanie 4.4](./zadanie4)
 
+* Azure Log Analytics Workspace
+* Azure Container App Environment
+* Azure Container App
