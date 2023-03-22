@@ -52,3 +52,8 @@
 
 ## [Zadanie 4.6](./zadanie6)
 
+* Route Table dla podsieci Spoke App
+* Route Table dla podsieci Jumphost VM
+* Dowiązanie Route Table do podsieci Spoke App
+* Dowiązanie Route Table do podsieci Jumphost VM
+

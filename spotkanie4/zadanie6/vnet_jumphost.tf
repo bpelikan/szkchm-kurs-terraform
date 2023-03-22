@@ -41,3 +41,22 @@ resource "azurerm_private_dns_zone_virtual_network_link" "jumphost_link_app_cae"
   private_dns_zone_name = azurerm_private_dns_zone.app_cae.name
   virtual_network_id    = azurerm_virtual_network.jumphost_vnet.id
 }
+
+
+resource "azurerm_route_table" "jumphost_vm" {
+  name                = "${local.jumphost_prefix}-routetable"
+  location            = data.azurerm_resource_group.main_rg.location
+  resource_group_name = data.azurerm_resource_group.main_rg.name
+
+  route {
+    name                   = "to-${local.app_prefix}"
+    address_prefix         = local.app_vnet_address_space[0]
+    next_hop_type          = "VirtualAppliance"
+    next_hop_in_ip_address = azurerm_firewall.hub_fw.ip_configuration[0].private_ip_address
+  }
+}
+
+resource "azurerm_subnet_route_table_association" "jumphost_vm" {
+  subnet_id      = azurerm_subnet.jumphost_vnet_sub01.id
+  route_table_id = azurerm_route_table.jumphost_vm.id
+}
