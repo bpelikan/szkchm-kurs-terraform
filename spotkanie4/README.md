@@ -48,3 +48,7 @@
 * Podpięcie prywatnej strefy DNS pod sieć Jumphost
 * Podpięcie prywatnej strefy DNS pod sieć App
 * Podpięcie prywatnej strefy DNS pod sieć Hub
+
+
+## [Zadanie 4.6](./zadanie6)
+
