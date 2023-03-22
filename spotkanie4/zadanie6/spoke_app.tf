@@ -39,3 +39,7 @@ resource "azurerm_container_app" "app_ca" {
     }
   }
 }
+
+output "app_ca_latest_revision_fqdn" {
+  value = azurerm_container_app.app_ca.latest_revision_fqdn
+}

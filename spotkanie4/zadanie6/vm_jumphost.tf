@@ -18,7 +18,7 @@ resource "azurerm_public_ip" "jumphost-pip" {
   allocation_method   = "Static"
 }
 
-output "jumphost-pip-value" {
+output "jumphost_pip_value" {
   value = azurerm_public_ip.jumphost-pip.ip_address
 }
 
@@ -48,3 +48,4 @@ resource "azurerm_linux_virtual_machine" "jumphost-vm" {
     version   = "latest"
   }
 }
+

@@ -57,3 +57,6 @@
 * Dowiązanie Route Table do podsieci Spoke App
 * Dowiązanie Route Table do podsieci Jumphost VM
 
+## Zadanie 4.7
+
+* Zalogowanie się na utworzoną VM i odpytanie za pomocą `curl` aplikację wdrożoną na Azure Container Apps.
