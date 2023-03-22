@@ -34,3 +34,10 @@ resource "azurerm_subnet_network_security_group_association" "jumphost_nsg_vm" {
   subnet_id                 = azurerm_subnet.jumphost_vnet_sub01.id
   network_security_group_id = azurerm_network_security_group.jumphost_nsg_vm.id
 }
+
+resource "azurerm_private_dns_zone_virtual_network_link" "jumphost_link_app_cae" {
+  name                  = "${local.jumphost_prefix}-link_app_cae"
+  resource_group_name   = data.azurerm_resource_group.main_rg.name
+  private_dns_zone_name = azurerm_private_dns_zone.app_cae.name
+  virtual_network_id    = azurerm_virtual_network.jumphost_vnet.id
+}

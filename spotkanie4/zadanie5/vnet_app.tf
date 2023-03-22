@@ -23,3 +23,10 @@ resource "azurerm_subnet_network_security_group_association" "app_nsg" {
   subnet_id                 = azurerm_subnet.app_vnet_sub01.id
   network_security_group_id = azurerm_network_security_group.app_nsg.id
 }
+
+resource "azurerm_private_dns_zone_virtual_network_link" "app_link_app_cae" {
+  name                  = "${local.app_prefix}-link_app_cae"
+  resource_group_name   = data.azurerm_resource_group.main_rg.name
+  private_dns_zone_name = azurerm_private_dns_zone.app_cae.name
+  virtual_network_id    = azurerm_virtual_network.app_vnet.id
+}

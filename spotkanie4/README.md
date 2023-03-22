@@ -42,3 +42,9 @@
 
 
 ## [Zadanie 4.5](./zadanie5)
+
+* Prywatna strefa DNS pod Azure Container App
+* Wpis wildcard typu A do prywatnej strefy DNS pod Azure Container App
+* Podpięcie prywatnej strefy DNS pod sieć Jumphost
+* Podpięcie prywatnej strefy DNS pod sieć App
+* Podpięcie prywatnej strefy DNS pod sieć Hub
