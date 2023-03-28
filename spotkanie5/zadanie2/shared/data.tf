@@ -1,13 +1,13 @@
-data "azurerm_resource_group" "main_rg" {
-  name = var.main_rg_name
+data "azurerm_resource_group" "rg" {
+  name = var.rg_name
 }
 
 
 output "resource_group_id" {
-  value = data.azurerm_resource_group.main_rg.id
+  value = data.azurerm_resource_group.rg.id
 }
 
 output "resource_group_location" {
-  value       = data.azurerm_resource_group.main_rg.location
+  value       = data.azurerm_resource_group.rg.location
   description = "resourceGroupLocation"
 }
