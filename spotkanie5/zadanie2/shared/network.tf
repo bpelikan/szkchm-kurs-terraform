@@ -10,4 +10,5 @@ resource "azurerm_subnet" "endpoints" {
   resource_group_name = data.azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = [local.endpoints_address_prefix]
+  enforce_private_link_endpoint_network_policies = true
 }
