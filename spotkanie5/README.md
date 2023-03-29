@@ -41,8 +41,14 @@ terraform destroy --auto-approve
 
 ## [Zadanie 5.3](./zadanie3)
 
-* Utworzenie Azure Key Vault
+* utworzenie Azure Key Vault
+
 
 ## [Zadanie 5.4](./zadanie4)
 
-* Utworzenie Azure Container Registry
+* utworzenie Azure Container Registry
+
+
+## [Zadanie 5.5](./zadanie5)
+
+* utworzenie Storage Account
