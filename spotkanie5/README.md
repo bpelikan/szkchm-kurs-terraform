@@ -36,5 +36,9 @@ terraform destroy --auto-approve -var-file=dev.tfvars
 
 cd ../shared
 terraform destroy --auto-approve
-
 ```
+
+
+## [Zadanie 5.3](./zadanie3)
+
+* 
