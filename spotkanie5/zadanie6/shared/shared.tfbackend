@@ -1,0 +1,5 @@
+resource_group_name  = "chm-student22"
+storage_account_name = "chmstudent22tfstate"
+container_name       = "tfstate"
+key                  = "shared.terraform.tfstate"
+subscription_id      = "e0a3aa17-0bd9-4dc5-803d-6ea393ade30a"
