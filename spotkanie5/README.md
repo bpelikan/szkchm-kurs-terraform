@@ -52,3 +52,9 @@ terraform destroy --auto-approve
 ## [Zadanie 5.5](./zadanie5)
 
 * utworzenie Storage Account
+
+
+## [Zadanie 5.6](./zadanie6)
+
+* Private DNS Zones
+* Private Endpoints
