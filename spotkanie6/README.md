@@ -5,8 +5,14 @@
 
 * utworzenie Redis Cache
 
+
 ## [Zadanie 6.2](./zadanie2)
 
 * utworzenie PostgreSQL Flexible Server
+
+
+## [Zadanie 6.3](./zadanie3)
+
+* utworzenie Log Analytics Workspace
 
 
