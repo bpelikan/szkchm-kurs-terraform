@@ -14,11 +14,6 @@ data "azurerm_private_dns_zone" "acr" {
   resource_group_name = data.azurerm_resource_group.rg.name
 }
 
-data "azurerm_container_registry" "acr" {
-  name                = replace("${local.prefix_shared}-acr", "-", "")
-  resource_group_name = data.azurerm_resource_group.rg.name
-}
-
 
 output "resource_group_id" {
   value = data.azurerm_resource_group.rg.id

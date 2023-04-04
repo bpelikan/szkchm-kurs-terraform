@@ -17,16 +17,6 @@ resource "azurerm_subnet" "data" {
   resource_group_name  = data.azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = [local.data_address_prefix]
-
-  delegation {
-    name = "fs"
-    service_delegation {
-      name = "Microsoft.DBforPostgreSQL/flexibleServers"
-      actions = [
-        "Microsoft.Network/virtualNetworks/subnets/join/action",
-      ]
-    }
-  }
 }
 
 resource "azurerm_subnet" "endpoints" {

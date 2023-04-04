@@ -4,7 +4,6 @@ locals {
     kv    = "privatelink.vaultcore.azure.net"
     redis = "privatelink.redis.cache.windows.net"
     psql  = "${var.environment}.postgres.database.azure.com"
-    aks   = "${var.environment}.privatelink.${data.azurerm_resource_group.rg.location}.azmk8s.io"
   }
 }
 
