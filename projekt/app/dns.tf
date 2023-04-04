@@ -1,7 +1,8 @@
 locals {
   dns_zones = {
-    file = "privatelink.file.core.windows.net"
-    kv   = "privatelink.vaultcore.azure.net"
+    file  = "privatelink.file.core.windows.net"
+    kv    = "privatelink.vaultcore.azure.net"
+    redis = "privatelink.redis.cache.windows.net"
   }
 }
 
