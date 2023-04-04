@@ -15,4 +15,8 @@
 
 * utworzenie Log Analytics Workspace
 
+## [Zadanie 6.4](./zadanie4)
+
+* utworzenie AKS
+
 
