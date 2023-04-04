@@ -5,3 +5,8 @@
 
 * utworzenie Redis Cache
 
+## [Zadanie 6.2](./zadanie2)
+
+* utworzenie PostgreSQL Flexible Server
+
+
