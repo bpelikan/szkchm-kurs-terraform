@@ -8,6 +8,13 @@ terraform {
 }
 
 provider "azurerm" {
+  alias = "hub"
   features {}
-  subscription_id = var.sub_id
+  subscription_id = var.hub_sub_id
+}
+
+provider "azurerm" {
+  alias = "spoke"
+  features {}
+  subscription_id = var.spoke_sub_id
 }

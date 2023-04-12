@@ -3,7 +3,7 @@
 
 ## [Zadanie 7.1](./zadanie1)
 
-* 
+* Dodanie aliasów dla providerów i zasobów
 
 
 

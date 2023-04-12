@@ -18,12 +18,22 @@ locals {
 }
 
 
-variable "sub_id" {
+variable "hub_sub_id" {
   type    = string
-  default = "e0a3aa17-0bd9-4dc5-803d-6ea393ade30a"
+  default = "6734621b-0b1a-48d2-9826-ddb7aeed2846"
 }
 
-variable "main_rg_name" {
+variable "spoke_sub_id" {
+  type    = string
+  default = "790cebac-b0c8-49ec-99ce-4651daa94879"
+}
+
+variable "hub_rg_name" {
   type    = string
   default = "chm-student22"
+}
+
+variable "spoke_rg_name" {
+  type    = string
+  default = "chm-student22-a"
 }
