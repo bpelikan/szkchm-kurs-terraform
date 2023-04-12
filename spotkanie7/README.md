@@ -5,5 +5,9 @@
 
 * Dodanie aliasów dla providerów i zasobów
 
+## [Zadanie 7.2](./zadanie2)
+
+* Przeniesienie zasobów tworzących sieć spoke do modułu
+
 
 
