@@ -6,3 +6,8 @@
 * Dodanie aliasów dla providerów i zasobów
 
 
+## [Zadanie 8.2](./zadanie2)
+
+* Przeniesienie Key Vaulta do modułu
+
+
