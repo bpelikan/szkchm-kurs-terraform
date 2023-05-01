@@ -30,7 +30,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "zones" {
 resource "azurerm_private_dns_zone_virtual_network_link" "acr" {
   provider              = azurerm.shared
   name                  = "${azurerm_virtual_network.vnet.name}-acr"
-  resource_group_name   = data.azurerm_resource_group.shared.name
-  private_dns_zone_name = data.azurerm_private_dns_zone.acr.name
+  resource_group_name   = data.terraform_remote_state.shared.outputs.rg_name
+  private_dns_zone_name = "privatelink.azurecr.io"
   virtual_network_id    = azurerm_virtual_network.vnet.id
 }

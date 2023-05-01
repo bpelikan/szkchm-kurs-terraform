@@ -45,16 +45,16 @@ resource "azurerm_subnet" "endpoints" {
 
 resource "azurerm_virtual_network_peering" "shared_to_app" {
   provider                  = azurerm.shared
-  name                      = "${data.azurerm_virtual_network.shared.name}-to-${azurerm_virtual_network.vnet.name}"
-  resource_group_name       = data.azurerm_resource_group.shared.name
-  virtual_network_name      = data.azurerm_virtual_network.shared.name
+  name                      = "${data.terraform_remote_state.shared.outputs.vnet_name}-to-${azurerm_virtual_network.vnet.name}"
+  resource_group_name       = data.terraform_remote_state.shared.outputs.rg_name
+  virtual_network_name      = data.terraform_remote_state.shared.outputs.vnet_name
   remote_virtual_network_id = azurerm_virtual_network.vnet.id
 }
 
 resource "azurerm_virtual_network_peering" "app_to_shared" {
   provider                  = azurerm.app
-  name                      = "${azurerm_virtual_network.vnet.name}-to-${data.azurerm_virtual_network.shared.name}"
+  name                      = "${azurerm_virtual_network.vnet.name}-to-${data.terraform_remote_state.shared.outputs.vnet_name}"
   resource_group_name       = data.azurerm_resource_group.rg.name
   virtual_network_name      = azurerm_virtual_network.vnet.name
-  remote_virtual_network_id = data.azurerm_virtual_network.shared.id
+  remote_virtual_network_id = data.terraform_remote_state.shared.outputs.vnet_id
 }

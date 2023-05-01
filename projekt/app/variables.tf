@@ -42,6 +42,17 @@ variable "vnet_address_space" {
   default = "10.1.0.0/16"
 }
 
+variable "shared_state_config" {
+  type = object({
+    resource_group_name  = string
+    storage_account_name = string
+    container_name       = string
+    key                  = string
+    subscription_id      = string
+  })
+}
+
+
 locals {
   app_address_prefix       = cidrsubnet(var.vnet_address_space, 8, 0)
   data_address_prefix      = cidrsubnet(var.vnet_address_space, 8, 1)
