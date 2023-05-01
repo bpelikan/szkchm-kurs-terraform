@@ -8,5 +8,5 @@
 * Zaktualizowanie wersji providerów
     * hashicorp/azurerm: `3.45.0` -> `3.54.0`
     * hashicorp/random: `3.4.3` -> `3.5.1`
-
+* Zastąpienie przestarzałych parametrów
 

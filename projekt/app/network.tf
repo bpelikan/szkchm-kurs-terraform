@@ -33,12 +33,12 @@ resource "azurerm_subnet" "data" {
 }
 
 resource "azurerm_subnet" "endpoints" {
-  provider                                       = azurerm.app
-  name                                           = "${local.prefix}-snet-endpoints"
-  resource_group_name                            = data.azurerm_resource_group.rg.name
-  virtual_network_name                           = azurerm_virtual_network.vnet.name
-  address_prefixes                               = [local.endpoints_address_prefix]
-  enforce_private_link_endpoint_network_policies = true
+  provider                                  = azurerm.app
+  name                                      = "${local.prefix}-snet-endpoints"
+  resource_group_name                       = data.azurerm_resource_group.rg.name
+  virtual_network_name                      = azurerm_virtual_network.vnet.name
+  address_prefixes                          = [local.endpoints_address_prefix]
+  private_endpoint_network_policies_enabled = true
 }
 
 
