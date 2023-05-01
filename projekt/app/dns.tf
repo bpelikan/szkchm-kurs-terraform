@@ -3,7 +3,6 @@ locals {
     file  = "privatelink.file.core.windows.net"
     kv    = "privatelink.vaultcore.azure.net"
     redis = "privatelink.redis.cache.windows.net"
-    psql  = "${var.environment}.postgres.database.azure.com"
   }
 }
 
