@@ -10,3 +10,7 @@
     * hashicorp/random: `3.4.3` -> `3.5.1`
 * Zastąpienie przestarzałych parametrów
 * Wykorzystanie data `terraform_remote_state` do pobierania danych zasobów Shared
+
+## [Zadanie 9.2](./zadanie2)
+
+* Przeniesienie bazy PostgreSQL do modułu
