@@ -11,7 +11,6 @@ terraform apply --auto-approve -var-file=dev.tfvars
 
 terraform init -backend-config=./prod.tfbackend -reconfigure
 terraform apply --auto-approve -var-file=prod.tfvars
-
 ```
 
 ```bash
