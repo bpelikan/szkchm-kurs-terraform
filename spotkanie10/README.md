@@ -14,3 +14,7 @@
 * Wyłączenie publicznego dostępu do usługi Azure Container Registry
 * Ograniczenie dostępu do Key Vault
 * Wyłączenie publicznego dostępu do usługi Azure Cache for Redis
+
+## [Zadanie 10.3](./zadanie3)
+
+* Integracja AKS z Key Vault
