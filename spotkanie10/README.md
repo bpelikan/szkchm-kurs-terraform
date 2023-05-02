@@ -8,6 +8,7 @@
     * Kubectl
     * Helm
 
+
 ## [Zadanie 10.2](./zadanie2)
 
 * Link strefy DNS wykorzystywanej przez AKS do sieci `Shared`
@@ -15,6 +16,12 @@
 * Ograniczenie dostępu do Key Vault
 * Wyłączenie publicznego dostępu do usługi Azure Cache for Redis
 
+
 ## [Zadanie 10.3](./zadanie3)
 
 * Integracja AKS z Key Vault
+
+
+## [Zadanie 10.4](./zadanie4)
+
+* Utworzenie sekretów w Key Vault
