@@ -3,8 +3,8 @@
 
 ## [Zadanie 5.1](./zadanie1)
 
-* ręczne utworzenie storage account
-* konfiguracja backendu `terraform.tfbackend` korzystająca z utworzonego storage account
+* Ręczne utworzenie storage account
+* Konfiguracja backendu `terraform.tfbackend` korzystająca z utworzonego storage account
     ```bash
     terraform init -backend-config=./terraform.tfbackend
     ```
@@ -12,7 +12,7 @@
 
 ## [Zadanie 5.2](./zadanie2)
 
-* przygotowanie sieci Hub & Spoke
+* Przygotowanie sieci Hub & Spoke
 
 ```bash
 cd shared
@@ -41,17 +41,17 @@ terraform destroy --auto-approve
 
 ## [Zadanie 5.3](./zadanie3)
 
-* utworzenie Azure Key Vault
+* Utworzenie Azure Key Vault
 
 
 ## [Zadanie 5.4](./zadanie4)
 
-* utworzenie Azure Container Registry
+* Utworzenie Azure Container Registry
 
 
 ## [Zadanie 5.5](./zadanie5)
 
-* utworzenie Storage Account
+* Utworzenie Storage Account
 
 
 ## [Zadanie 5.6](./zadanie6)

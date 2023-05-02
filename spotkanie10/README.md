@@ -11,7 +11,7 @@
 
 ## [Zadanie 10.2](./zadanie2)
 
-* Link strefy DNS wykorzystywanej przez AKS do sieci `Shared`
+* Link do strefy DNS wykorzystywanej przez AKS do sieci `Shared`
 * Wyłączenie publicznego dostępu do usługi Azure Container Registry
 * Ograniczenie dostępu do Key Vault
 * Wyłączenie publicznego dostępu do usługi Azure Cache for Redis
@@ -42,7 +42,7 @@
 
 ## Zadanie 10.6
 
-* Połaczenie się z AKS
+* Połaczenie się z AKS przez jumphosta
     ```bash
     AKS_SUBSCRIPTION_ID="790cebac-b0c8-49ec-99ce-4651daa94879"
     AKS_RESOURCE_GROUP_NAME="chm-student22-a"
@@ -51,7 +51,7 @@
     az aks get-credentials --resource-group $AKS_RESOURCE_GROUP_NAME --name $AKS_NAME
     ```
 
-* Wdrożenie aplikacji na klaster
+* Wdrożenie aplikacji na klaster AKS
     ```bash
     TENANT_ID="3a81269f-0731-42d7-9911-a8e9202fa750"
     ACR_NAME="chms22srdlabacr"
