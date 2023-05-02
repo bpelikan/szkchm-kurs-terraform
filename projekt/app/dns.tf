@@ -7,7 +7,6 @@ locals {
 }
 
 
-
 resource "azurerm_private_dns_zone" "zones" {
   provider = azurerm.app
   for_each = local.dns_zones
