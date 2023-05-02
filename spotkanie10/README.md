@@ -8,3 +8,9 @@
     * Kubectl
     * Helm
 
+## [Zadanie 10.2](./zadanie2)
+
+* Link strefy DNS wykorzystywanej przez AKS do sieci `Shared`
+* Wyłączenie publicznego dostępu do usługi Azure Container Registry
+* Ograniczenie dostępu do Key Vault
+* Wyłączenie publicznego dostępu do usługi Azure Cache for Redis
