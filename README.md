@@ -1,5 +1,8 @@
 # [Kurs Terraform](https://portal.szkolachmury.pl/products/terraform-praktyczny-kurs-iac)
 
+![img](./img/img2.png)
+
+
 * [Spotkanie 1](./spotkanie1/)
    * Konfiguracja providerów
    * Key Vault
