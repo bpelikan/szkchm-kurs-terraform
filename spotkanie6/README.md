@@ -3,20 +3,20 @@
 
 ## [Zadanie 6.1](./zadanie1)
 
-* utworzenie Redis Cache
+* Utworzenie Redis Cache
 
 
 ## [Zadanie 6.2](./zadanie2)
 
-* utworzenie PostgreSQL Flexible Server
+* Utworzenie PostgreSQL Flexible Server
 
 
 ## [Zadanie 6.3](./zadanie3)
 
-* utworzenie Log Analytics Workspace
+* Utworzenie Log Analytics Workspace
 
 ## [Zadanie 6.4](./zadanie4)
 
-* utworzenie AKS
+* Utworzenie AKS
 
 
